@@ -31,5 +31,35 @@ public class ConversionTest {
 		
 		float f6 = l6;
 		
+		// 2. 연산시 형변환  규칙
+		System.out.println("======================= 연산시 형변환 =========================");
+		
+		// 2-1. 피연산자 중 더 큰 데이터 타입으로 형변환되어 연산된다.
+		int soju3 = 20;
+		long beer3 = 100;
+		// int result_tong1 = soju3 + beer3; // 연산을 해서 
+		int result_tong2 = (int)(soju3 + beer3);
+		System.out.println("result_tong : " + result_tong2);
+		
+		// 2-2. 실수 타입과 정수 타입이 연산되면 데이터 타입의 크기와 무관하게 무조건 실수 타입으로 형변환됨
+		long l8 = 1000;
+		float f8 = 4.1f;
+		float result_l8_f8 = l8 + f8;
+		System.out.println("result_l8_f8 : " + result_l8_f8);
+		
+		// 2-3. int형보다 작은 정수 타입의 데이터 타입
+		// byte, short, char을 연산하면 무조건 int형으로 변환되어 연산됨
+		byte b4 = 8;
+		short s4 = 10;
+		// short result_b4_s4 = b4 + s4; // byte와 short의 연산은 int형이 되기에 short에는 담지 못한다.
+		int result_b4_s4 = b4 + s4;
+		System.out.println("result_b4_s4 : " + result_b4_s4);
+		
+		char c1 = 'A';
+		int i7 = c1 + 1;
+		System.out.println("c1 + 1 = " + i7);
+		
+		
+		
 	}
 }
