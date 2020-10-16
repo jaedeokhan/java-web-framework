@@ -14,7 +14,7 @@ public class WorkShop5 {
 		System.out.print("첫 번째 수 : ");
 		int secondValue = scan.nextInt();		
 		
-		int bigValue = (firstValue > secondValue) ?  firstValue : secondValue;
+		String bigValue = (firstValue > secondValue) ?  firstValue  + "가 크다": (firstValue == secondValue) ?  "같다" : firstValue + "가 작다";
 		
 		System.out.println("큰 수 : " + bigValue);
 		
