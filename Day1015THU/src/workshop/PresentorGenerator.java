@@ -9,18 +9,17 @@ public class PresentorGenerator {
 			"이하얀나래봄", "장근철", "정우준", "한재덕"
 	};
 		
-		String[] temp = {};
+		String[] temp = new String[7];
 		for (int i = 0; i <= 6; i++) {
 			String presentor = studentArray[(int)(Math.random() * 19)];
 			temp[i] = presentor;
-			System.out.println(temp[i]);
+			for (int j = 0; j <= i - 1; j++) {
+				while(temp[i] == temp[j]) {
+					presentor = studentArray[(int)(Math.random() * 19)];
+				}
+			}
+			System.out.println( (i+1) + "번 : "+ presentor);
+			
 		}
-		
-		/*
-		 * System.out.println(studentArray[(int)(Math.random() * 19)]);
-		 * System.out.println((int)(Math.random() * 19));
-		 * System.out.println((int)Math.random());
-		 */
-		
 	}
 }
