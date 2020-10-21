@@ -26,6 +26,7 @@ public class NestedIfTest {
 		
 		// 코드를 줄일 수 있는 방법은?
 		
+		
 	}
 
 }
