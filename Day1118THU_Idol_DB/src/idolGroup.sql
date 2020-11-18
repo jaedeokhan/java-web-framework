@@ -1,0 +1,9 @@
+CREATE TABLE idolGroup (
+	name VARCHAR2(30) PRIMARY KEY,
+	age NUMBER NOT NULL,
+	memberNumber INT NOT NULL,
+	company VARCHAR2(30) NOT NULL,
+	gedner CHAR(1) NOT NULL,
+	year NUMBER NOT NULL,
+	album VARCHAR2(30) NOT NULL
+);
